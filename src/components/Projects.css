@@ -1,0 +1,127 @@
+/* Header (screenshot style) */
+.projects .section-header {
+    text-align: center;
+}
+
+.projects .section-subtitle {
+    margin: 0 auto;
+}
+
+.projects__kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: var(--text-primary);
+    color: var(--bg-secondary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-card);
+}
+
+/* Grid */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+/* Card */
+.projects__card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__card:hover {
+    transform: none;
+}
+
+/* Card Content */
+.projects__card-content {
+    padding: 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__card-title {
+    font-size: 1.075rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.projects__card-desc {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    flex: 1;
+}
+
+/* Tags */
+.projects__card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.projects__tag {
+    padding: 4px 14px;
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    border-radius: 50px;
+}
+
+.projects__tag--more {
+    color: var(--text-secondary);
+}
+
+/* Footer */
+.projects__card-footer {
+    padding: 18px 28px;
+    border-top: 1px solid var(--border-glass);
+    display: flex;
+    align-items: center;
+}
+
+.projects__source {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.projects__source:hover {
+    color: var(--text-primary);
+    transform: translateY(-1px);
+}
+
+.projects__source-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
+}
+
+.projects__source:hover .projects__source-icon {
+    color: var(--text-primary);
+}
+
+.projects__source--disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+}

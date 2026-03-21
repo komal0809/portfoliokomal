@@ -1,0 +1,135 @@
+.footer {
+    padding: 60px 0 0;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.03));
+    border-top: 1px solid var(--border-glass);
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+/* Brand */
+.footer__logo {
+    font-family: var(--font-mono);
+    font-size: 1.175rem;
+    font-weight: 700;
+    display: inline-flex;
+    margin-bottom: 12px;
+}
+
+.footer__logo-bracket {
+    color: var(--accent-primary);
+}
+
+.footer__logo-name {
+    margin: 0 2px;
+}
+
+.footer__tagline {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Links */
+.footer__heading {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: var(--text-primary);
+}
+
+.footer__links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__links a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.footer__links a:hover {
+    color: var(--accent-primary);
+}
+
+/* Social */
+.footer__social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__social-icons a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.footer__social-icons a:hover {
+    color: var(--accent-primary);
+}
+
+/* Divider */
+.footer__divider {
+    height: 1px;
+    background: var(--border-glass);
+    margin-bottom: 24px;
+}
+
+/* Bottom */
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 28px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.footer__credit {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer__heart {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer__social-icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+}
