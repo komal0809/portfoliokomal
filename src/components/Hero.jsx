@@ -89,8 +89,8 @@ function Hero() {
                     <div className="hero__avatar-ring">
                         <div className="hero__avatar">
                             <img 
-                                src="/profile.jpg"  
-                                alt="profile"
+                                src="/src/assets/profile.jpg"  
+                                alt="test"
                                
                             />
                         </div>
