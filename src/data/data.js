@@ -20,7 +20,9 @@ I believe in consistency, hands-on learning, and creating systems that deliver m
   email: "lamba6765@gmail.com",
   phone: "7496816764",
   location: "Gurugram, Haryana",
-  resumeLink: "/Komal_Lamba_CV.pdf",
+  // direct download link to avoid Google view permission issues across devices
+  cvLink: "https://drive.google.com/uc?export=download&id=1SVXElD_tE_nYXzpFHNTLghexZeMyOr6X",
+  resumeLink: "https://drive.google.com/file/d/1SVXElD_tE_nYXzpFHNTLghexZeMyOr6X/view?usp=sharing",
 };
 
 export const stats = [
