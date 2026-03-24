@@ -89,9 +89,9 @@ function Hero() {
                     <div className="hero__avatar-ring">
                         <div className="hero__avatar">
                             <img 
-                                src="/src/assets/profile.jpg"  
-                                alt="test"
-                                style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+                                src="/profile.jpg"  
+                                alt="profile"
+                               
                             />
                         </div>
                     </div>
