@@ -43,14 +43,18 @@ function Hero() {
             <div className="hero__bg-glow hero__bg-glow--2"></div>
 
             <div className="hero__content container">
+                
+                {/* LEFT SIDE */}
                 <div className="hero__text">
                     <p className="hero__greeting">
                         <span className="hero__wave">👋</span> Hello, I'm
                     </p>
+
                     <h1 className="hero__name">
                         {personalInfo.name}
                         <span className="hero__dot">.</span>
                     </h1>
+
                     <div className="hero__role-wrapper">
                         <span className="hero__role-prefix">I'm a </span>
                         <span className="hero__role">
@@ -58,49 +62,52 @@ function Hero() {
                             <span className="hero__cursor">|</span>
                         </span>
                     </div>
+
                     <p className="hero__description">
                         {personalInfo.bio}
                     </p>
+
                     <div className="hero__actions">
                         <a href="#contact" className="btn btn-primary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                            </svg>
                             Get in Touch
                         </a>
-                        <a
-                            href={personalInfo.cvLink || personalInfo.resumeLink}
-                            className="btn btn-secondary"
-                            target="_blank"
+
+                        <a 
+                            href={personalInfo.resumeLink} 
+                            className="btn btn-secondary" 
+                            target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                <polyline points="7 10 12 15 17 10" />
-                                <line x1="12" y1="15" x2="12" y2="3" />
-                            </svg>
                             Download CV
                         </a>
                     </div>
                 </div>
 
+                {/* RIGHT SIDE (IMAGE) */}
                 <div className="hero__visual">
+                    
                     <div className="hero__avatar-ring">
                         <div className="hero__avatar">
-                            <div className="hero__avatar-placeholder">
-                                <span>{personalInfo.name.charAt(0)}</span>
-                            </div>
+                            <img 
+                                src="/src/assets/profile.jpg"  
+                                alt="test"
+                                style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+                            />
                         </div>
                     </div>
+
                     <div className="hero__floating-badge hero__floating-badge--1">
                         <span>🐍</span> Python
                     </div>
+
                     <div className="hero__floating-badge hero__floating-badge--2">
                         <span>🤖</span> TensorFlow
                     </div>
+
                     <div className="hero__floating-badge hero__floating-badge--3">
                         <span>📊</span> Scikit-learn
                     </div>
+
                 </div>
             </div>
 

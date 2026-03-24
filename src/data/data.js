@@ -1,10 +1,11 @@
 // ============================================
 // 📝 PORTFOLIO DATA — Edit this file to customize your portfolio!
 // ============================================
-
+import profile from "../assets/profile.jpg";
 export const personalInfo = {
   name: "Komal Lamba",
   tagline: "Aspiring Machine Learning Engineer",
+  image: profile,
   roles: [
     "Aspiring Machine Learning Engineer",
     "Computer Science Student",
